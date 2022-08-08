@@ -12,6 +12,7 @@ const About = () => {
       </a>
       <iframe
         src="https://docs.google.com/document/d/e/2PACX-1vTRfszzsO2uY0lT2H-0rfJBIGEQHzyZPhNHQ2fyaNIdTCpjjly-wfX-7mGaReYsSgF5RDHiZPa1rfoX/pub?embedded=true"
+        title="Resume"
         className="w-full aspect-video md:aspect-square"
       ></iframe>
     </div>

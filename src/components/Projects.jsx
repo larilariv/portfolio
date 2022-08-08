@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Projects = () => {
   const projects = [
@@ -48,7 +48,7 @@ const Projects = () => {
                   <img
                     className="absolute object-contain w-full h-full rounded-lg"
                     src={project.image}
-                    alt="Screenshot of ${project.name} app"
+                    alt={`Screenshot of ${project.name} app`}
                   />
                 </div>
 

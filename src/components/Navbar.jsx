@@ -79,6 +79,7 @@ const Navbar = () => {
                   <div className="inline-flex items-stretch">
                     <a
                       className="text-neutral-500 transition hover:text-neutral-500/75"
+                      href="/#"
                       onClick={() => setDropdownOpen(!dropdownOpen)}
                     >
                       Contact
@@ -141,6 +142,7 @@ const Navbar = () => {
                           </a>
                           <a
                             className="inline-flex px-4 py-2 text-sm text-neutral-500 rounded-lg hover:bg-neutral-50 hover:text-neutral-700"
+                            href="/#"
                             role="menuitem"
                           >
                             lv23@nyu.edu
