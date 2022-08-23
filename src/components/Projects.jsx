@@ -37,84 +37,46 @@ const Projects = () => {
   ];
 
   return (
-    <div>
-      <section>
-        {projects.map((project) => {
-          return (
-            <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-                {/* Project Image */}
-                <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last">
-                  <img
-                    className="absolute object-contain w-full h-full rounded-lg"
-                    src={project.image}
-                    alt={`Screenshot of ${project.name} app`}
-                  />
-                </div>
-
-                {/* Project Title, Description, and Link */}
-                <div className="lg:py-24">
-                  <h2 className="text-3xl font-bold sm:text-4xl">
-                    {project.name}
-                  </h2>
-
-                  <p className="mt-4 text-neutral-600">{project.description}</p>
-
-                  <a
-                    className="inline-flex items-center px-6 py-3 mt-8 mr-4 text-white bg-sage-500 rounded hover:bg-sage-600"
-                    href={project.deployedLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="text-sm font-medium">Live Site</span>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="ml-1.5 w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                  </a>
-                  <a
-                    className="inline-flex items-center px-6 py-3 mt-8 text-white bg-sage-500 rounded hover:bg-sage-600"
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span className="text-sm font-medium">
-                      GitHub Repository
-                    </span>
-
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      className="ml-1.5 w-5 h-5"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
+    <section id="projects">
+      {projects.map((project) => {
+        return (
+          <div className="max-w-screen-xl mx-auto py-12 grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-2">
+            {/* Project Image */}
+            <div className="relative h-64 overflow-hidden sm:h-80 md:h-full md:order-last">
+              <img
+                className="absolute object-contain w-full h-full"
+                src={project.image}
+                alt={`Screenshot of ${project.name} app`}
+              />
             </div>
-          );
-        })}
-      </section>
-    </div>
+
+            {/* Project Title, Description, and Link */}
+            <div className="lg:py-20">
+              <h2 className="text-3xl font-bold sm:text-4xl">{project.name}</h2>
+
+              <p className="mt-4 text-neutral-600">{project.description}</p>
+
+              <a
+                className="inline-flex items-center px-6 py-3 mt-8 mr-4 text-white bg-sage-500 rounded hover:bg-sage-600"
+                href={project.deployedLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm font-medium">Live Site</span>
+              </a>
+              <a
+                className="inline-flex items-center px-6 py-3 mt-8 text-white bg-sage-500 rounded hover:bg-sage-600"
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-sm font-medium">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        );
+      })}
+    </section>
   );
 };
 
