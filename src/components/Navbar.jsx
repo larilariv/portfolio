@@ -5,7 +5,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
   return (
-    <div className="bg-sage-700">
+    <div className="sticky top-0 bg-sage-700">
       <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Name Links to Home */}
@@ -50,7 +50,16 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white"
-                  href="#about"
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white"
+                  href="/about"
                 >
                   About
                 </a>
@@ -59,7 +68,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white"
-                  href="#projects"
+                  href="/projects"
                 >
                   Projects
                 </a>
@@ -134,16 +143,14 @@ const Navbar = () => {
                 </div>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item text-sage-50 hover:text-white transform transition duration-500 hover:scale-110">
                 <a
                   href="https://drive.google.com/file/d/1bqQkvz2KT7nsQtsT6mCRfSBb0sT-Yj3J/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="px-6 py-3 bg-sage-600 rounded-lg hover:bg-sage-500"
                 >
-                  <div className="relative inline-flex block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white">
-                    Resume
-                  </div>
+                  <div className="relative inline-flex block">Resume</div>
                 </a>
               </li>
             </ul>
