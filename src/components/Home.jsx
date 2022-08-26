@@ -2,13 +2,28 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="min-h-screen max-w-screen-xl mx-auto px-6 lg:px-8">
+    <section className="max-w-screen-xl mx-auto">
       <img
-        src="images/completeLineArt.png"
-        className="max-w-full mt-20"
+        src="images/lineArt.png"
+        className="hidden lg:block"
         alt="Line drawing of woman at computer"
       />
-    </div>
+      <img
+        src="images/lineArtMobile.png"
+        className="max-w-full block lg:hidden"
+        alt="Line drawing of woman at computer"
+      />
+      {/* <img
+        src="images/floralBorder.png"
+        className="max-w-full"
+        alt="Watercolor flowers"
+      /> */}
+      {/* <img
+        src="images/floralBorder2.png"
+        className="max-w-full"
+        alt="Watercolor flowers"
+      /> */}
+    </section>
   );
 };
 
