@@ -37,10 +37,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects">
+    <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
       {projects.map((project) => {
         return (
-          <div className="max-w-screen-xl mx-auto py-12 grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-2">
+          <div className="py-12 grid grid-cols-1 gap-8 md:grid-cols-2">
             {/* Project Image */}
             <div className="relative h-64 overflow-hidden sm:h-80 md:h-full md:order-last">
               <img
@@ -51,7 +51,7 @@ const Projects = () => {
             </div>
 
             {/* Project Title, Description, and Link */}
-            <div className="lg:py-20">
+            <div className="md:py-10">
               <h2 className="text-3xl font-bold sm:text-4xl">{project.name}</h2>
 
               <p className="mt-4 text-neutral-600">{project.description}</p>
@@ -76,7 +76,7 @@ const Projects = () => {
           </div>
         );
       })}
-    </section>
+    </div>
   );
 };
 
