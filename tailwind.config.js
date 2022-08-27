@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       alert: "#E67C0B",
       cream: "#F5EBD5",
-      danger: "#FF4019",
+      rust: "#C67F43",
       neutral: {
         50: "#FAFAFA",
         100: "#F5F5F5",
