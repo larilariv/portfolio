@@ -5,7 +5,7 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
   return (
-    <div className="sticky top-0 bg-sage-700">
+    <div className="bg-sage-700">
       <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Name Links to Home */}
