@@ -4,10 +4,10 @@ import Logos from "./Logos";
 
 const About = () => {
   return (
-    <section className="max-w-screen-xl mx-auto py-12">
-      <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
+    <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
+      <div className="py-10 pb-0">
         <h1 className="text-3xl font-bold sm:text-4xl">The Road So Far</h1>
-        <p>
+        <p className="mt-4 text-neutral-700 tracking-wide leading-relaxed indent-5">
           My journey to becoming a developer began back in 2020. After
           transitioning to work-from-home during the pandemic I was left with a
           lot of time to reevaluate many aspects of my life, particularly my
@@ -18,7 +18,7 @@ const About = () => {
           soft sciences, I began looking into free resources like The Odin
           Project and my interest was piqued.
         </p>
-        <p>
+        <p className="mt-8 text-neutral-700 tracking-wide leading-relaxed indent-5">
           I dabbled with learning to code for the next year with enthusiasm, but
           my progress stalled without external accountability and I promised
           myself that if I couldn't make significant progress by the end of
@@ -32,11 +32,13 @@ const About = () => {
         </p>
       </div>
 
-      <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
+      <div className="py-10">
         <h1 className="text-3xl font-bold sm:text-4xl">My Tech Stack</h1>
-        <Logos />
+        <div className="mt-4 text-neutral-700">
+          <Logos />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
