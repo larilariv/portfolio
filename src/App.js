@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { About, Footer, Home, Navbar, Projects } from "./components";
+import { About, Home, Navbar, Projects } from "./components";
 
 function App() {
   return (
@@ -13,7 +13,6 @@ function App() {
           <Route exact path="/about" element={<About />} />
         </Route>
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }
