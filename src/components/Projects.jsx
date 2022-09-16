@@ -3,17 +3,17 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
-      name: "2048",
+      name: "Crafter Tracker",
       description:
-        "A recreation of the puzzle game 2048, a single player sliding puzzle game with a 4 x 4 grid and tiles with numerical values.",
-      image: "images/2048.png",
-      deployedLink: "https://larilariv.github.io/2048",
-      githubLink: "https://github.com/larilariv/2048",
+        "App for crafters to track all of their projects and see the projects of other users.",
+      image: "images/crafterTracker.png",
+      deployedLink: "https://craftertracker.herokuapp.com",
+      githubLink: "https://github.com/larilariv/CrafterTracker-Frontend",
     },
     {
       name: "Sew Organized",
       description:
-        "An app that displays a gallery of sewing patterns and give users the ability to create, read, update and delete pattern listings.",
+        "App that displays a gallery of sewing patterns and give users the ability to create, read, update and delete pattern listings.",
       image: "images/sewOrganized.png",
       deployedLink: "https://glacial-ravine-51611.herokuapp.com/patterns",
       githubLink: "https://github.com/larilariv/SewOrganized",
@@ -21,18 +21,18 @@ const Projects = () => {
     {
       name: "Every Volt",
       description:
-        "An app that allows electric vehicle users to input location data and recieve the infomation of the closest charging stations.",
+        "App that allows electric vehicle users to input location data and recieve the infomation of the closest charging stations.",
       image: "images/everyVolt.png",
       deployedLink: "https://every-volt-front.herokuapp.com",
       githubLink: "https://github.com/Every-Volt-App/front-end",
     },
     {
-      name: "Crafter Tracker",
+      name: "2048",
       description:
-        "An app for crafters to track all of their projects and see the projects of other users.",
-      image: "images/crafterTracker.png",
-      deployedLink: "https://craftertracker.herokuapp.com",
-      githubLink: "https://github.com/larilariv/CrafterTracker-Frontend",
+        "Recreation of the puzzle game 2048, a single player sliding puzzle game with a 4 x 4 grid and tiles with numerical values.",
+      image: "images/2048.png",
+      deployedLink: "https://larilariv.github.io/2048",
+      githubLink: "https://github.com/larilariv/2048",
     },
   ];
 
