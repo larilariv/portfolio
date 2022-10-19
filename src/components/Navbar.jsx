@@ -140,7 +140,7 @@ const Navbar = () => {
 
               <li className="nav-item text-sage-50 hover:text-white transform transition duration-500 hover:scale-110">
                 <a
-                  href="https://drive.google.com/file/d/19_iF5J5i932GhvnFuVYNKmtzmbnI-yrE/view?usp=sharing"
+                  href="https://docs.google.com/document/d/14MoJpzmsrFhzOl-pIZJPPzKux__drkmHboHfUmUJ4cw/edit?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                   className="px-6 py-3 bg-sage-600 rounded-lg hover:bg-sage-500"
