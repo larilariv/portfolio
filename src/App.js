@@ -1,19 +1,26 @@
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
 
 import { Navbar } from "./components";
 import { About, Home, Projects } from './pages'
+
+import { Element } from 'react-scroll';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/projects" element={<Projects />} />
-          <Route exact path="/about" element={<About />} />
-        </Route>
-      </Routes>
+
+      <Element name="home" className="element" >
+        <Home />
+      </Element>
+
+      <Element name="about" className="element" >
+        <About />
+      </Element>
+
+      <Element name="projects" className="element" >
+        <Projects />
+      </Element>
     </div>
   );
 }

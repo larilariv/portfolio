@@ -1,19 +1,33 @@
 import React from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   const [dropdownOpen, setDropdownOpen] = React.useState(false);
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+    setNavbarOpen(false);
+  };
+
+  const closeMobileMenu = () => {
+    setNavbarOpen(false);
+  };
+
   return (
-    <div className="bg-sage-700">
+    <div className="bg-sage-700 fixed w-full top-0 z-50">
       <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Name Links to Home */}
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <a className="block text-white text-xl" href="/">
+            <button 
+              className="block text-white text-xl cursor-pointer hover:text-sage-200 transition-colors duration-300" 
+              onClick={scrollToTop}
+            >
               <span>Larissa Vieira</span>
-            </a>
+            </button>
           </div>
+          
           {/* Navbar Collapse Button */}
           <button
             className="inline-flex items-center p-2 ml-3 text-sm text-sage-50 bg-sage-600 rounded-lg md:hidden hover:bg-sage-500 hover:text-white"
@@ -43,30 +57,45 @@ const Navbar = () => {
 
             <ul className="flex text-md flex-row gap-6">
               <li className="nav-item">
-                <a
-                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white"
-                  href="/"
+                <Link
+                  activeClass="text-white scale-110"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-64}
+                  duration={500}
+                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white cursor-pointer"
                 >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a
-                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white"
-                  href="/about"
+                <Link
+                  activeClass="text-white scale-110"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-64}
+                  duration={500}
+                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white cursor-pointer"
                 >
                   About
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a
-                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white"
-                  href="/projects"
+                <Link
+                  activeClass="text-white scale-110"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-64}
+                  duration={500}
+                  className="block text-sage-50 transform transition duration-500 hover:scale-110 hover:text-white cursor-pointer"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
@@ -153,29 +182,48 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Navigation */}
       <nav
         className={
           "flex flex-col justify-between px-4 pt-0 py-6 md:hidden" +
           (navbarOpen ? "flex" : " hidden")
         }
       >
-        <a href="/" className="block px-6 py-2 text-sage-50 hover:text-white">
+        <Link 
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-64}
+          duration={500}
+          className="block px-6 py-2 text-sage-50 hover:text-white cursor-pointer"
+          onClick={closeMobileMenu}
+        >
           Home
-        </a>
+        </Link>
 
-        <a
-          href="/about"
-          className="block px-6 py-2 text-sage-50 hover:text-white"
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-64}
+          duration={500}
+          className="block px-6 py-2 text-sage-50 hover:text-white cursor-pointer"
+          onClick={closeMobileMenu}
         >
           About
-        </a>
+        </Link>
 
-        <a
-          href="/projects"
-          className="block px-6 py-2 text-sage-50 hover:text-white"
+        <Link
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-64}
+          duration={500}
+          className="block px-6 py-2 text-sage-50 hover:text-white cursor-pointer"
+          onClick={closeMobileMenu}
         >
           Projects
-        </a>
+        </Link>
 
         <details className="group">
           <summary className="flex items-center px-6 py-2 text-sage-50 hover:text-white">
