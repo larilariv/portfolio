@@ -1,12 +1,17 @@
 import React from "react";
 
+import Game2048Image from "../assets/2048.png"
+import CrafterTrackerImage from "../assets/crafterTracker.png"
+import EveryVoltImage from "../assets/everyVolt.png"
+import SewOrganizedImage from "../assets/sewOrganized.png"
+
 const Projects = () => {
   const projects = [
     {
       name: "Crafter Tracker",
       description:
         "App for crafters to track all of their projects and see the projects of other users.",
-      image: "images/crafterTracker.png",
+      image: CrafterTrackerImage,
       deployedLink: "https://craftertracker.herokuapp.com",
       githubLink: "https://github.com/larilariv/CrafterTracker-Frontend",
     },
@@ -14,7 +19,7 @@ const Projects = () => {
       name: "Sew Organized",
       description:
         "App that displays a gallery of sewing patterns and give users the ability to create, read, update and delete pattern listings.",
-      image: "images/sewOrganized.png",
+      image: SewOrganizedImage,
       deployedLink: "https://glacial-ravine-51611.herokuapp.com/patterns",
       githubLink: "https://github.com/larilariv/SewOrganized",
     },
@@ -22,7 +27,7 @@ const Projects = () => {
       name: "Every Volt",
       description:
         "App that allows electric vehicle users to input location data and recieve the infomation of the closest charging stations.",
-      image: "images/everyVolt.png",
+      image: EveryVoltImage,
       deployedLink: "https://every-volt-front.herokuapp.com",
       githubLink: "https://github.com/Every-Volt-App/front-end",
     },
@@ -30,7 +35,7 @@ const Projects = () => {
       name: "2048",
       description:
         "Recreation of the puzzle game 2048, a single player sliding puzzle game with a 4 x 4 grid and tiles with numerical values.",
-      image: "images/2048.png",
+      image: Game2048Image,
       deployedLink: "https://larilariv.github.io/2048",
       githubLink: "https://github.com/larilariv/2048",
     },
