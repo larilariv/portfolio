@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 import { About, Home, Projects } from './pages'
 
 import { Element } from 'react-scroll';
@@ -20,6 +20,10 @@ function App() {
 
       <Element name="projects" className="element" >
         <Projects />
+      </Element>
+
+      <Element name="footer" className="element" >
+        <Footer />
       </Element>
     </div>
   );
