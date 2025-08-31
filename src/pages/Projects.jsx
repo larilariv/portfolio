@@ -67,7 +67,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm font-medium">Live Site</span>
+                <span className="text-sm font-medium font-['Capriola']">Live Site</span>
               </a>
               <a
                 className="inline-flex items-center px-6 py-3 mt-8 text-white bg-sage-500 rounded hover:bg-sage-600"
@@ -75,7 +75,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="text-sm font-medium">GitHub Repository</span>
+                <span className="text-sm font-medium font-['Capriola']">GitHub Repository</span>
               </a>
             </div>
           </div>
