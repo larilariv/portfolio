@@ -21,7 +21,7 @@ const Navbar = () => {
           {/* Name Links to Home */}
           <div className="flex items-center">
             <button 
-              className="block text-white text-xl cursor-pointer hover:text-sage-200 transition-colors duration-300" 
+              className="block text-white text-xl cursor-pointer hover:text-sage-200 transition-colors duration-300 font-['Capriola']" 
               onClick={scrollToTop}
             >
               <span>Larissa Vieira</span>
@@ -55,7 +55,7 @@ const Navbar = () => {
               Header navigation
             </h2>
 
-            <ul className="flex text-md flex-row gap-6">
+            <ul className="flex text-md flex-row gap-6 font-['Capriola']">
               <li className="nav-item">
                 <Link
                   activeClass="text-white scale-110"
@@ -185,7 +185,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <nav
         className={
-          "flex flex-col justify-between px-4 pt-0 py-6 md:hidden" +
+          "flex flex-col justify-between px-4 pt-0 py-6 font-['Capriola'] md:hidden" +
           (navbarOpen ? "flex" : " hidden")
         }
       >

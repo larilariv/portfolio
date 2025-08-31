@@ -59,7 +59,7 @@ const Projects = () => {
             <div className="md:py-10">
               <h2 className="text-3xl font-bold sm:text-4xl">{project.name}</h2>
 
-              <p className="mt-4 text-neutral-600">{project.description}</p>
+              <p className="text-lg leading-relaxed mt-4 text-neutral-600">{project.description}</p>
 
               <a
                 className="inline-flex items-center px-6 py-3 mt-8 mr-4 text-white bg-sage-500 rounded hover:bg-sage-600"

@@ -22,7 +22,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">Bootstrap</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Bootstrap</p>
       </div>
       {/* CSS */}
       <div>
@@ -72,7 +72,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">CSS</p>
+        <p className="text-lg leading-relaxed text-center mt-2">CSS</p>
       </div>
       {/* Django */}
       <div>
@@ -97,7 +97,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">Django</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Django</p>
       </div>
       {/* Git */}
       <div>
@@ -114,7 +114,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">Git</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Git</p>
       </div>
       {/* Handlebars */}
       <div>
@@ -131,7 +131,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">Handlebars</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Handlebars</p>
       </div>
       {/* Heroku */}
       <div>
@@ -148,7 +148,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">Herkou</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Herkou</p>
       </div>
       {/* HTML */}
       <div>
@@ -201,7 +201,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">HTML</p>
+        <p className="text-lg leading-relaxed text-center mt-2">HTML</p>
       </div>
       {/* JaveScript */}
       <div>
@@ -223,7 +223,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">JavaScript</p>
+        <p className="text-lg leading-relaxed text-center mt-2">JavaScript</p>
       </div>
       {/* MongoDB */}
       <div>
@@ -273,7 +273,7 @@ const Logos = () => {
             </g>
           </g>
         </svg>
-        <p className="text-center mt-2">MongoDB</p>
+        <p className="text-lg leading-relaxed text-center mt-2">MongoDB</p>
       </div>
       {/* PostgreSQL */}
       <div>
@@ -306,7 +306,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">PostgreSQL</p>
+        <p className="text-lg leading-relaxed text-center mt-2">PostgreSQL</p>
       </div>
       {/* Postman */}
       <div>
@@ -405,7 +405,7 @@ const Logos = () => {
             </g>
           </g>
         </svg>
-        <p className="text-center mt-2">Postman</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Postman</p>
       </div>
       {/* Python */}
       <div>
@@ -448,7 +448,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">Python</p>
+        <p className="text-lg leading-relaxed text-center mt-2">Python</p>
       </div>
       {/* React */}
       <div>
@@ -465,7 +465,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">React</p>
+        <p className="text-lg leading-relaxed text-center mt-2">React</p>
       </div>
       {/* TailwindCSS */}
       <div>
@@ -494,7 +494,7 @@ const Logos = () => {
             ></path>
           </g>
         </svg>
-        <p className="text-center mt-2">TailwindCSS</p>
+        <p className="text-lg leading-relaxed text-center mt-2">TailwindCSS</p>
       </div>
     </div>
   );
