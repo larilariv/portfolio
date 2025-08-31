@@ -16,10 +16,10 @@ const Navbar = () => {
 
   return (
     <div className="bg-sage-700 fixed w-full top-0 z-50">
-      <div className="max-w-screen-xl px-6 mx-auto lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="px-4 lg:px-6">
+        <div className="flex items-center justify-between h-[72px] w-full">
           {/* Name Links to Home */}
-          <div className="flex-1 md:flex md:items-center md:gap-12">
+          <div className="flex items-center">
             <button 
               className="block text-white text-xl cursor-pointer hover:text-sage-200 transition-colors duration-300" 
               onClick={scrollToTop}
